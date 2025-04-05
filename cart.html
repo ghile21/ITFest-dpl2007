@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    
+
+
+
+
+    <div class="cart">
+        <h2>Cos de Cumparaturi</h2>
+        <div id="cart-items"></div>
+        <div class="product"></div>
+        <p id="cart-total">Total: 0 RON</p>
+        <div id="paypal-button-container"></div>
+    </div>
+    
+    <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        const switchInput = document.getElementById('themeSwitch');
+    const body = document.body;
+
+    switchInput.addEventListener('change', () => {
+      body.classList.toggle('dark-mode');
+    });
+        </script>
+
+</body>
+</html>
